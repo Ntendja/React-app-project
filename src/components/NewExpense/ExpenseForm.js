@@ -56,6 +56,7 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate)
         };
         console.log(expenseData);
+        // la ligne suivante fait la liaison  parent-to-child avec le App.js
         props.onSaveExpenseData(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
